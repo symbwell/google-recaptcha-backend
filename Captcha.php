@@ -97,9 +97,9 @@ class Captcha
 
     /**
      * Get the response from Google's API and decode it.
-     * @return mixed
+     * @return array
      */
-    private function getResponseData(): mixed {
+    private function getResponseData(): array {
         return json_decode($this->getVerifyResponse(), true);
     }
 }
